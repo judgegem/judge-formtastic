@@ -3,12 +3,8 @@ module Judge
     module Html
       
       def input_html_options
-        if options[:validate].present?
-          vc = Judge::ValidatorCollection.new(object, method).to_json
-          { "data-validate" => vc }.merge(super)
-        else
-          super
-        end
+        attrs = options[:validate].present? ? Judge::HTML.attrs_for(object, method) : {}
+        attrs.merge(super) 
       end
 
     end

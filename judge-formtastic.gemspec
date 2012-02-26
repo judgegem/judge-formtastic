@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["joecorcoran@gmail.com"]
   s.homepage    = "http://github.com/joecorcoran/judge-formtastic"
   s.summary     = "Formtastic adapter for Judge"
-  s.description = %q{This gem allows you to add Judge client side validation to your Formtastic forms.}
+  s.description = %q{Easily add Judge client side validation to your Formtastic forms.}
 
   s.rubyforge_project = "judge-formtastic"
 
@@ -18,12 +18,13 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "judge", "~> 1.0"
+  s.add_runtime_dependency "judge", "~> 1.1"
 
   s.add_development_dependency "rake"
-  s.add_development_dependency "rails",         "~> 3.2"
-  s.add_development_dependency "sqlite3-ruby",  "~> 1.3.3"
-  s.add_development_dependency "judge",         "~> 1.0"
-  s.add_development_dependency "formtastic",    "~> 2.0"
-  s.add_development_dependency "factory_girl",  "~> 2.5.2"
+  s.add_development_dependency "rails",              "~> 3.2"
+  s.add_development_dependency "sqlite3-ruby",       "~> 1.3.3"
+  s.add_development_dependency "judge",              "~> 1.0"
+  s.add_development_dependency "formtastic",         "~> 2.0"
+  s.add_development_dependency "rspec",              "~> 2.8"
+  s.add_development_dependency "factory_girl",       "~> 2.5.2"
 end
