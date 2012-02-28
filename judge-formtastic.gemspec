@@ -18,12 +18,13 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_runtime_dependency "judge", "~> 1.1"
+  s.add_runtime_dependency "judge",      "~> 1.1"
+  s.add_runtime_dependency "formtastic", "~> 2.0"
 
   s.add_development_dependency "rake"
   s.add_development_dependency "rails",              "~> 3.2"
   s.add_development_dependency "sqlite3-ruby",       "~> 1.3.3"
-  s.add_development_dependency "judge",              "~> 1.0"
+  s.add_development_dependency "judge",              "~> 1.1"
   s.add_development_dependency "formtastic",         "~> 2.0"
   s.add_development_dependency "rspec",              "~> 2.8"
   s.add_development_dependency "factory_girl",       "~> 2.5.2"
