@@ -6,9 +6,7 @@ This is an adapter gem which allows you to use [Judge](http://judge.joecorcoran.
 
 ## Usage
 
-Do this in your Gemfile:
-
-    gem "judge-formtastic", "~> x.x.x", :require => "judge/formtastic"
+    gem 'judge-formtastic'
 
 Then add <code>:validate => true</code> to the input options in your views. That's all.
 
