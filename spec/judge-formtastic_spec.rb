@@ -1,7 +1,12 @@
 require "spec_helper"
 
 describe Judge::Formtastic do
-  let(:builder) { Formtastic::FormBuilder.new(:user, User.new, ActionView::Base.new, {}, nil) }
+  let(:template) do
+    ActionView::Base.new
+  end
+  let(:builder) do
+    Formtastic::FormBuilder.new(:user, User.new, template, {})
+  end
   let(:expected) do
     /data\-validate\=\"\[.+\]\"/
   end

@@ -17,10 +17,4 @@ module ActionDispatch::Routing::PolymorphicRoutes
 end
 
 # stop formtastic whining about rails
-Rails = OpenStruct.new({
-  :application => OpenStruct.new({
-    :config => OpenStruct.new({
-      :cache_classes => false
-    }) 
-  }) 
-})
+Rails.application = OpenStruct.new(config: OpenStruct.new(cache_classes: false))

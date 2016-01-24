@@ -15,10 +15,10 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_runtime_dependency 'judge',       '~> 2.0'
-  s.add_runtime_dependency 'formtastic',  '~> 2.2'
+  s.add_runtime_dependency 'formtastic',  '~> 3.1'
 
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'rails',   '~> 3.2'
-  s.add_development_dependency 'sqlite3', '~> 1.3.7'
-  s.add_development_dependency 'rspec',   '~> 2.13'
+  s.add_development_dependency 'rails',   '~> 4.2'
+  s.add_development_dependency 'sqlite3', '~> 1.3.11'
+  s.add_development_dependency 'rspec',   '~> 3.4'
 end
